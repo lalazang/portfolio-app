@@ -14,6 +14,7 @@
 .navBar h1 {
     margin: 0;
     padding: 0;
+    padding-left: 10px;
     width: 40%;
     float: left;
     line-height: 50px;
@@ -25,32 +26,42 @@
 
 body {
     margin: 0;
-    padding: 80px;
+    padding: 90px;
 }
 
-/* main {
-    padding-top: 60px;
-} */
+.linkMark {
+    height: 90px;
+}
 
 .headline, .bio, .projects {
+    height: 550px;
+}
+
+.headline, .bio {
+    line-height: 30px;
+    text-align: left;
+    margin: auto;
+    width: max-content;
+}
+
+.projects {
     text-align: center;
-    padding-bottom: 500px;
 }
 
 #imgContainer {
-    width: 100px;
-    height: 100px;
-    background-color: grey;
     margin: auto;
 }
 
-@media screen and (min-width: 525px) {
+
+
+@media screen and (min-width: 400px) {
     .navBar ul {
         display: inline-block;
         list-style: none;
+        text-align: right;
         float: right;
-        width: 50%;
-        margin-right: 30px;
+        width: 40%;
+        margin-right: 20px;
     }
     
     .navBar li {
