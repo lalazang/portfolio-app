@@ -1,9 +1,14 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    background-color: lightblue;
 }
 
 .navBar {
-    background-color: grey;
+    background-color: rgb(48, 48, 168);
     position: fixed;
     top: 0;
     left: 0;
@@ -18,6 +23,8 @@
     width: 40%;
     float: left;
     line-height: 50px;
+    font-size: 30px;
+    color: white;
 }
 
 .navBar ul {
@@ -38,20 +45,45 @@ body {
 }
 
 .headline, .bio {
-    line-height: 30px;
+    line-height: 40px;
     text-align: left;
     margin: auto;
     width: max-content;
+    font-size: 18px;
 }
 
 .projects {
     text-align: center;
 }
 
-#imgContainer {
-    margin: auto;
+.projects h2 {
+    font-size: 28px;
+    margin: 10px;
 }
 
+.projects h3 {
+    font-size: 21px;
+    margin: 10px;
+}
+
+.projectLink {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.projectLink a {
+    color:  rgb(48, 48, 168);
+}
+
+#imgContainer {
+    margin: auto;
+    padding: 10px;
+}
+
+.projectComment {
+    font-size: 16px;
+    line-height: 30px;
+}
 
 
 @media screen and (min-width: 400px) {
@@ -66,8 +98,14 @@ body {
     
     .navBar li {
         display: inline;
-        padding-right: 10px;
-    
+        padding-right: 20px;
+    }
+
+    .navBar a {
+        color: lightblue;
+        font-size: 18px;
+        text-decoration: none;
+
     }
   
 }
