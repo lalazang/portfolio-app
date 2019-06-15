@@ -89,9 +89,9 @@ main {
     height: 800px
 }
 
-.projects h2 {
+.projects h2, .bio h2 {
     font-size: 28px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 .projects h3 {
