@@ -7,8 +7,8 @@ body {
     background-color: lightblue;
     margin-top: 0;
     padding-top: 90px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 main {
@@ -36,8 +36,26 @@ main {
 }
 
 .navBar ul {
-    display: none;
+    display: block;
+    list-style: none;
+    text-align: right;
+    float: right;
+    width: 60%;
+    margin-right: 20px;
+    padding-inline-start: 0;
 }
+
+.navBar li {
+    display: inline;
+    padding-right: 20px;
+}
+
+.navBar a {
+    color: lightblue;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 
 .linkMark {
     height: 90px;
@@ -45,14 +63,25 @@ main {
 
 .headline, .bio {
     height: 550px;
-}
-
-.headline, .bio {
-    line-height: 40px;
+    line-height: 30px;
     text-align: left;
     margin: auto;
-    width: max-content;
+    width: fit-content;
     font-size: 18px;
+}
+
+.headline div, .bio div {
+    padding-top: 20px;
+}
+
+#selfieContainer {
+    margin: auto;
+    margin-top: 90px;
+}
+
+#selfieContainer img {
+    border: 2px solid rgb(25, 25, 87);
+    border-radius: 5%;
 }
 
 .projects {
@@ -127,26 +156,38 @@ main {
     text-decoration: none;
 }
 
-@media screen and (min-width: 300px) {
-    .navBar ul {
-        display: block;
-        list-style: none;
-        text-align: right;
-        float: right;
-        width: 60%;
-        margin-right: 20px;
-        padding-inline-start: 0;
+@media screen and (max-width: 420px) {
+    body {
+        padding-top: 130px;
     }
-    
+
+    .navBar h1 {
+        width: 40%;
+        line-height: 89px;
+    }
+
+    .navBar ul {
+        display: inline-block;
+        width: 30%;
+    }
+
     .navBar li {
-        display: inline;
-        padding-right: 20px;
+        display: block;
+        padding-top: 4px;
     }
 
     .navBar a {
-        color: lightblue;
-        font-size: 18px;
-        text-decoration: none;
+        font-size: 16px;
     }
-  
+
+    #selfieContainer img {
+        width: 224px;
+        height: 256px;
+    }
+
+    .linkMark {
+        height: 130px;
+    }
+    
+
 }
